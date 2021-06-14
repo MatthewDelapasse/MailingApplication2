@@ -21,6 +21,8 @@ namespace TheMailingListApplication
         public frmMailingList()
         {
             InitializeComponent();
+            this.KeyPress += new KeyPressEventHandler(txtInput_KeyPress); //This fixes the problem of why
+                                                                          //My program wasn't checking the input characters.
         }
 
         DateTime lastNow;

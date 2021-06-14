@@ -233,6 +233,8 @@ namespace TheMailingListApplication
             // timSeconds
             // 
             this.timSeconds.Interval = 1000;
+            this.timSeconds.Tick += new System.EventHandler(timSeconds_Tick);//Forgot to add this to my code and that is why
+                                                                             //The Timer didn't work. 
             // 
             // frmMailingList
             // 
